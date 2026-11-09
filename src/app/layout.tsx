@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 const description =
-  "Ej Caubat — Software Engineer and Enterprise Application Developer experienced in C#, .NET, banking systems, HR platforms, ERP/POS support, Azure DevOps, and AI-assisted engineering.";
+  "Ej Caubat — Software Engineer and Enterprise Application Developer experienced in C#, .NET, banking systems, HR platforms, Azure DevOps, and AI-assisted engineering.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),

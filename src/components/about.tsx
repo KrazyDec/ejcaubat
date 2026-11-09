@@ -21,7 +21,7 @@ export function About() {
             ))}
 
             <Reveal delay={0.15}>
-              <ol className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5" aria-label="Career progression">
+              <ol className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4" aria-label="Career progression">
                 {about.journey.map((step) => (
                   <li key={step.year + step.label} className="glass p-3">
                     <p className="font-mono text-xs text-accent">{step.year}</p>

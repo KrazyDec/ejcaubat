@@ -36,7 +36,7 @@ export function ExperienceTimeline() {
           id="experience-title"
           eyebrow="Experience"
           title="Work experience"
-          description="A career spanning enterprise applications, banking technology, HR platforms, and ERP/POS systems."
+          description="A career spanning enterprise applications, banking technology, HR platforms, and web development."
         />
 
         <ol className="relative border-l border-[rgb(var(--border))] pl-6 sm:pl-10">

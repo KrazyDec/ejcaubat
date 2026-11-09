@@ -20,12 +20,10 @@ export const profile: Profile = {
   heroIntro:
     "I build enterprise applications, improve business workflows, and explore AI-powered solutions that help teams work more effectively.",
   location: "Central Luzon, Philippines",
-  email: "ej.caubat@yahoo.com",
+  email: "ejcaubat14@gmail.com",
   linkedin: "https://www.linkedin.com/in/ejcaubat",
-  // TODO: Replace with your GitHub profile URL, e.g. "https://github.com/your-username".
-  github: null,
-  // TODO: Add your resume PDF at public/resume/ej-caubat-resume.pdf.
-  resumePath: "/resume/ej-caubat-resume.pdf",
+  github: "https://github.com/KrazyDec",
+  resumePath: "/resume/Ej_Caubat_ATS_Resume_Updated.pdf",
   // TODO: Add a professional photo at public/images/ and set the path here.
   photo: null,
   siteUrl,
@@ -43,8 +41,8 @@ export const navItems: NavItem[] = [
 
 export const about = {
   paragraphs: [
-    "I'm a software professional with hands-on experience across enterprise application development, banking solutions, HR systems, ERP and POS support, API development, database management, testing, DevOps, and technical support.",
-    "My career began as a web development intern building e-commerce sites, then grew through client-facing software engineering on ERP and POS systems, full-stack programming on an HRIS and employee self-service platform, and banking technology work on core banking and straight-through processing systems. Today, as a Packaged App Development Analyst, I design backend features and API logic in C# and .NET, support CI/CD deployments through Azure DevOps, and contribute to impact analysis, regression testing, and knowledge transfer.",
+    "I'm a software professional with hands-on experience across enterprise application development, banking solutions, HR systems, API development, database management, testing, DevOps, and technical support.",
+    "I completed my 500-hour web development internship in March 2019, building e-commerce sites and developing a foundation in software engineering. My experience also includes full-stack programming on an HRIS and employee self-service platform, and banking technology work on core banking and straight-through processing systems. Today, as a Packaged App Development Analyst, I design backend features and API logic in C# and .NET, support CI/CD deployments through Azure DevOps, and contribute to impact analysis, regression testing, and knowledge transfer.",
     "Beyond delivery work, I'm focused on Generative AI, AI agents, workflow integration, and AI-assisted development with tools like GitHub Copilot, and on building scalable digital products of my own.",
   ],
   focusAreas: [
@@ -52,7 +50,6 @@ export const about = {
     "Backend and API development",
     "Banking technology",
     "HRIS and employee self-service",
-    "ERP and POS support",
     "Database development",
     "Testing and release support",
     "DevOps and CI/CD",
@@ -60,8 +57,7 @@ export const about = {
     "Knowledge sharing and documentation",
   ],
   journey: [
-    { year: "2018", label: "Web Developer Intern" },
-    { year: "2019", label: "Software Engineer" },
+    { year: "2019", label: "Web Development Internship Completed" },
     { year: "2020", label: "Programmer" },
     { year: "2022", label: "Programmer, Banking" },
     { year: "2024", label: "Packaged App Development Analyst" },
@@ -136,29 +132,13 @@ export const experience: Experience[] = [
     ],
   },
   {
-    company: "Hilsoft Inc.",
-    title: "Software Engineer",
-    period: "May 2019 – December 2019",
-    location: "Mandaluyong, Metro Manila, Philippines",
-    meta: [{ label: "Functional Role", value: "Client Support" }],
-    highlights: [
-      "Provided customer support for Hilsoft software products.",
-      "Supported clients using ERP and POS systems.",
-      "Conducted on-site consultancy visits to address client requirements and technical challenges.",
-      "Managed stored procedures.",
-      "Supported a Java-based ERP system and worked with EAR files using Eclipse.",
-      "Supported C# desktop POS applications.",
-      "Used Postman when working with APIs.",
-    ],
-    technologies: ["Java", "Java Web", "C#", "SQL", "Eclipse", "Postman", "ERP systems", "POS systems"],
-  },
-  {
     company: "K. Grace Consulting Group Inc.",
     title: "Web Developer Intern",
-    period: "December 2018 – March 2019",
+    period: "Completed April 2019",
     location: "Makati, Metro Manila, Philippines",
     meta: [{ label: "Duration", value: "500 hours" }],
     highlights: [
+      "Completed a 500-hour web development internship in April 2019.",
       "Learned software development fundamentals in a professional setting.",
       "Built e-commerce websites using Magento and Wix.",
       "Gained introductory experience with APIs and the MVC pattern.",

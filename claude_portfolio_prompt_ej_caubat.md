@@ -8,7 +8,7 @@ Build a portfolio that presents Ej as an experienced software professional who c
 
 The website should communicate this message:
 
-> Ej is a versatile software engineer with experience across enterprise development, banking systems, HR platforms, ERP and POS support, automation, testing, DevOps, and AI-assisted engineering.
+> Ej is a versatile software engineer with experience across enterprise development, banking systems, HR platforms, automation, testing, DevOps, and AI-assisted engineering.
 
 ## Technical Requirements
 
@@ -81,7 +81,7 @@ Do not display the phone number publicly by default. Keep it in a configuration 
 
 Use the following content as the basis of the About section. Improve the wording for clarity and impact, but do not invent accomplishments or metrics.
 
-Ej Caubat is a software professional with experience in enterprise application development, banking solutions, HR systems, ERP and POS support, API development, database management, testing, DevOps, and technical support.
+Ej Caubat is a software professional with experience in enterprise application development, banking solutions, HR systems, API development, database management, testing, DevOps, and technical support.
 
 His work includes building backend features and API logic using C# and .NET, testing APIs with Postman, supporting CI/CD deployments through Azure DevOps, maintaining database procedures, improving application workflows, preparing impact analysis and regression testing artifacts, resolving technical issues, and collaborating with QA and cross-functional teams.
 
@@ -108,7 +108,7 @@ Suggested hero copy:
 
 ## About Section
 
-Create a concise but meaningful career narrative showing Ej's progression from a web development intern to software engineer, programmer, consultant, and packaged application development analyst.
+Create a concise but meaningful career narrative highlighting Ej's experience as a web development intern, programmer, and packaged application development analyst.
 
 Highlight experience across:
 
@@ -116,7 +116,6 @@ Highlight experience across:
 - Backend and API development
 - Banking technology
 - HRIS and employee self-service platforms
-- ERP and POS support
 - Database development
 - Testing and release support
 - DevOps and CI/CD
@@ -202,27 +201,6 @@ ASP.NET, Microsoft SQL Server, SSMS, Visual Studio, Tortoise version control, Ji
 **Technologies and Tools:**
 
 C#, MVC, AngularJS, TypeScript, HTML, CSS, Microsoft SQL Server, SSMS, Postman, Azure, VS Code
-
-### Hilsoft Inc.
-
-**Position:** Software Engineer  
-**Period:** May 2019 to December 2019  
-**Location:** Mandaluyong, Metro Manila, Philippines  
-**Functional Role:** Client Support
-
-**Highlights:**
-
-- Provided customer support for Hilsoft software products.
-- Supported clients using ERP and POS systems.
-- Conducted on-site consultancy visits to address client requirements and technical challenges.
-- Managed stored procedures.
-- Supported a Java-based ERP system and worked with EAR files using Eclipse.
-- Supported C# desktop POS applications.
-- Used Postman when working with APIs.
-
-**Technologies and Tools:**
-
-Java, Java Web, C#, SQL, Eclipse, Postman, ERP systems, POS systems
 
 ### K. Grace Consulting Group Inc.
 
