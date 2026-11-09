@@ -4,6 +4,7 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { about, education, profile } from "@/data/portfolio";
 import { getInitials } from "@/lib/utils";
+import { publicAssetUrl } from "@/lib/site";
 
 export function About() {
   return (
@@ -35,7 +36,7 @@ export function About() {
             <div className="glass flex items-center gap-4 p-5">
               {profile.photo ? (
                 <Image
-                  src={profile.photo}
+                  src={publicAssetUrl(profile.photo)}
                   alt={`Portrait of ${profile.name}`}
                   width={64}
                   height={64}

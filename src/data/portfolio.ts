@@ -9,6 +9,7 @@ import type {
   Project,
   SkillGroup,
 } from "@/types/portfolio";
+import { siteUrl } from "@/lib/site";
 
 export const profile: Profile = {
   name: "Ej Caubat",
@@ -27,8 +28,7 @@ export const profile: Profile = {
   resumePath: "/resume/ej-caubat-resume.pdf",
   // TODO: Add a professional photo at public/images/ and set the path here.
   photo: null,
-  // TODO: Replace with your production domain after deploying.
-  siteUrl: "https://ej-caubat.vercel.app",
+  siteUrl,
 };
 
 export const navItems: NavItem[] = [

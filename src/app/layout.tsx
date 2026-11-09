@@ -12,6 +12,7 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.siteUrl),
+  alternates: { canonical: `${profile.siteUrl}/` },
   title: {
     default: `${profile.name} — Software Engineer & Enterprise Application Developer`,
     template: `%s | ${profile.name}`,
@@ -24,12 +25,12 @@ export const metadata: Metadata = {
   authors: [{ name: profile.name, url: profile.linkedin }],
   openGraph: {
     type: "website",
-    url: "/",
+    url: `${profile.siteUrl}/`,
     title: `${profile.name} — Software Engineer`,
     description,
     siteName: profile.name,
     // TODO: Add an Open Graph image at public/images/og.png (1200x630).
-    // images: [{ url: "/images/og.png", width: 1200, height: 630, alt: profile.name }],
+    // images: [{ url: `${profile.siteUrl}/images/og.png`, width: 1200, height: 630, alt: profile.name }],
   },
   twitter: {
     card: "summary_large_image",

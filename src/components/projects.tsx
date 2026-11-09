@@ -8,6 +8,7 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { projects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
+import { publicAssetUrl } from "@/lib/site";
 
 export function Projects() {
   const reduce = useReducedMotion();
@@ -58,7 +59,7 @@ export function Projects() {
               <div className="relative aspect-video border-t border-[rgb(var(--border))] bg-gradient-to-br from-blue-500/15 via-transparent to-transparent lg:aspect-auto lg:min-h-[240px] lg:border-l lg:border-t-0">
                 {featured.image && !imageFailed ? (
                   <Image
-                    src={featured.image}
+                    src={publicAssetUrl(featured.image)}
                     alt={`${featured.title} referral opportunities dashboard`}
                     fill
                     sizes="(min-width: 1152px) 544px, (min-width: 1024px) calc((100vw - 64px) / 2), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"

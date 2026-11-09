@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { profile } from "@/data/portfolio";
+import { publicAssetUrl } from "@/lib/site";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -62,7 +63,7 @@ export function Hero() {
           <a href="#contact" className="btn-secondary">
             <Mail className="h-4 w-4" aria-hidden /> Contact Me
           </a>
-          <a href={profile.resumePath} download className="btn-secondary">
+          <a href={publicAssetUrl(profile.resumePath)} download className="btn-secondary">
             <Download className="h-4 w-4" aria-hidden /> Download Resume
           </a>
         </motion.div>
