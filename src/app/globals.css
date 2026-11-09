@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 250 250 250;
+    --fg: 24 24 27;
+    --muted: 82 82 91;
+    --card: 255 255 255;
+    --border: 228 228 231;
+  }
+
+  .dark {
+    --bg: 9 9 11;
+    --fg: 244 244 245;
+    --muted: 161 161 170;
+    --card: 24 24 27;
+    --border: 39 39 42;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    isolation: isolate;
+    @apply bg-[rgb(var(--bg))] text-[rgb(var(--fg))] antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-[rgb(var(--bg))];
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+
+  .section {
+    @apply py-20 sm:py-28;
+  }
+
+  .glass {
+    @apply rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--card)/0.6)] backdrop-blur-md;
+  }
+
+  .text-muted {
+    @apply text-[rgb(var(--muted))];
+  }
+
+  .badge {
+    @apply inline-flex max-w-full flex-wrap items-center gap-y-1 break-words rounded-full border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-3 py-1 text-[13px] font-medium text-[rgb(var(--muted))] sm:text-xs;
+  }
+
+  .btn {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent text-white hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply btn border border-[rgb(var(--border))] bg-[rgb(var(--card)/0.6)] hover:border-accent/60;
+  }
+
+  .input {
+    @apply w-full min-w-0 rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--card))] px-4 py-2.5 text-base placeholder:text-[rgb(var(--muted))] focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 sm:text-sm;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgb(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--border) / 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+}
