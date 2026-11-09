@@ -1,18 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Rocket } from "lucide-react";
-import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { ScreenshotViewer } from "@/components/screenshot-viewer";
 import { projects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
-import { publicAssetUrl } from "@/lib/site";
 
 export function Projects() {
   const reduce = useReducedMotion();
-  const [imageFailed, setImageFailed] = useState(false);
   const featured = projects.find((p) => p.featured);
   const rest = projects.filter((p) => !p.featured);
 
@@ -57,21 +54,12 @@ export function Projects() {
                 )}
               </div>
               <div className="relative aspect-video border-t border-[rgb(var(--border))] bg-gradient-to-br from-blue-500/15 via-transparent to-transparent lg:aspect-auto lg:min-h-[240px] lg:border-l lg:border-t-0">
-                {featured.image && !imageFailed ? (
-                  <Image
-                    src={publicAssetUrl(featured.image)}
-                    alt={`${featured.title} referral opportunities dashboard`}
-                    fill
-                    sizes="(min-width: 1152px) 544px, (min-width: 1024px) calc((100vw - 64px) / 2), (min-width: 640px) calc(100vw - 64px), calc(100vw - 40px)"
-                    className="object-contain object-center lg:object-cover lg:object-left-top"
-                    onError={() => setImageFailed(true)}
-                  />
-                ) : (
-                  <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
-                    <Rocket className="h-10 w-10 text-accent" aria-hidden />
-                    <p className="text-muted text-sm">Screenshot coming soon</p>
-                  </div>
-                )}
+                <ScreenshotViewer
+                  key={featured.image}
+                  src={featured.image}
+                  title={featured.title}
+                  alt={`${featured.title} referral opportunities dashboard`}
+                />
               </div>
             </article>
           </Reveal>

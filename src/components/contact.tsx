@@ -5,6 +5,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
+import { CopyEmail } from "@/components/copy-email";
 import { profile } from "@/data/portfolio";
 import { isValidEmail } from "@/lib/utils";
 
@@ -82,10 +83,11 @@ export function Contact() {
 
         <div className="grid gap-8 lg:grid-cols-[320px_1fr]">
           <Reveal className="space-y-3">
-            <a href={`mailto:${profile.email}`} className="glass flex items-center gap-3 p-4 transition-colors hover:border-accent/40">
-              <Mail className="h-5 w-5 text-accent" aria-hidden />
-              <span className="text-sm">{profile.email}</span>
+            <a href={`mailto:${profile.email}`} className="glass flex min-h-11 items-center gap-3 p-4 transition-colors hover:border-accent/40">
+              <Mail className="h-5 w-5 shrink-0 text-accent" aria-hidden />
+              <span className="min-w-0 break-words text-sm">{profile.email}</span>
             </a>
+            <CopyEmail email={profile.email} />
             <a
               href={profile.linkedin}
               target="_blank"

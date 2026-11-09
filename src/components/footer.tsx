@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-[rgb(var(--border))] py-10">
       <div className="container-page flex flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-muted text-sm">
-          © {year} {profile.name}.
+                  © {year} {profile.name}. Jesus is King. All glory and thanks to Him.
         </p>
         <div className="flex items-center gap-4">
           <a href={`mailto:${profile.email}`} aria-label="Email" className="text-muted hover:text-accent">

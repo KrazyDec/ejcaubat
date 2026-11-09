@@ -1,4 +1,4 @@
-import { Briefcase, MapPin } from "lucide-react";
+import { Briefcase, ChevronDown, MapPin } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { experience } from "@/data/portfolio";
@@ -79,23 +79,33 @@ export function ExperienceTimeline() {
                     </dl>
                   )}
 
-                  {job.highlights && <Highlights items={job.highlights} />}
-                  {job.technologies && <TechList items={job.technologies} />}
+                  <details className="group mt-4">
+                    <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 rounded-lg border border-[rgb(var(--border))] px-3 py-2 text-sm font-medium hover:border-accent/40 [&::-webkit-details-marker]:hidden">
+                      <span>
+                        <span className="group-open:hidden">Show details</span>
+                        <span className="hidden group-open:inline">Hide details</span>
+                        <span className="sr-only"> for {job.company}</span>
+                      </span>
+                      <ChevronDown className="h-4 w-4 shrink-0 group-open:rotate-180" aria-hidden />
+                    </summary>
+                    {job.highlights && <Highlights items={job.highlights} />}
+                    {job.technologies && <TechList items={job.technologies} />}
 
-                  {job.projects && (
-                    <div className="mt-4 grid gap-4 md:grid-cols-2">
-                      {job.projects.map((p) => (
-                        <div
-                          key={p.name}
-                          className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg)/0.5)] p-4"
-                        >
-                          <h4 className="text-sm font-semibold">{p.name}</h4>
-                          <Highlights items={p.highlights} />
-                          <TechList items={p.technologies} />
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                    {job.projects && (
+                      <div className="mt-4 grid gap-4 md:grid-cols-2">
+                        {job.projects.map((p) => (
+                          <div
+                            key={p.name}
+                            className="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--bg)/0.5)] p-4"
+                          >
+                            <h4 className="text-sm font-semibold">{p.name}</h4>
+                            <Highlights items={p.highlights} />
+                            <TechList items={p.technologies} />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </details>
                 </article>
               </Reveal>
             </li>
